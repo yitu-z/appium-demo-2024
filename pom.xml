@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>untitled</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+
+<repositories>
+<!--    <repository>-->
+<!--        <id>central-repos</id>-->
+<!--        <name>Central Repository</name>-->
+<!--        <url>http://repo.maven.apache.org/maven2</url>-->
+<!--    </repository>-->
+
+<!--    <repository>-->
+<!--        <id>central-repos1</id>-->
+<!--        <name>Central Repository 2</name>-->
+<!--        <url>http://repo1.maven.org/maven2/</url>-->
+<!--    </repository>-->
+</repositories>
+
+
+    <dependencyManagement>
+
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.16.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>2.50.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>3.0.0</version>
+            <!--            <scope>test</scope> -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>9.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.appium/mitmproxy-java -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>mitmproxy-java</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.appium/droiddriver -->
+<!--        <dependency>-->
+<!--            <groupId>io.appium</groupId>-->
+<!--            <artifactId>droiddriver</artifactId>-->
+<!--            <version>1.0.0-BETA1</version>-->
+<!--        </dependency>-->
+
+
+
+
+    </dependencies>
+
+
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+
+</project>
